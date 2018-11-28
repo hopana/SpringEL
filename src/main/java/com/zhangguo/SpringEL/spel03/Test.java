@@ -26,7 +26,7 @@ public class Test {
 		// 算术操作符
 		System.out.println(ep.parseExpression("100-2^2").getValue());
 
-        //
+        // 测试获取用户属性
         EvaluationContext evctx = new StandardEvaluationContext();
         evctx.setVariable("user1", user1);
         System.out.println(ep.parseExpression("'user1:'+#user1.getName()").getValue(evctx, String.class));
